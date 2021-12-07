@@ -1,0 +1,56 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(to right, #ff7300, #c300ff);
+}
+
+.calc-grid {
+  display: grid;
+  margin-top: 2rem;
+  justify-content: center;
+  grid-template-columns: repeat(4, 6rem);                          /* for the next 4 col set size to 6rem */
+  grid-template-rows: minmax(7rem, auto) repeat(5, 6rem);          /* minmax will set the very first row(current operand) will have a default of 7rem and there on it will occupy according to the length of input */
+}
+
+.calc-grid button {
+  cursor: pointer;
+  font-size: 2rem;
+  border: 1px solid white;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.calc-grid > button:hover,
+.calc-grid > button:focus {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+.output {
+  grid-column: 1 / -1;                                            /*for the result box, will take the space from column 1 to -1 (a complete line)*/
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  padding: 0.75rem;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.output .prev-operand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
+
+.output .curr-operand {
+  color: white;
+  font-size: 2.5rem;
+}
