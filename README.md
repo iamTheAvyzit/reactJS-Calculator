@@ -1,3 +1,6 @@
+# Screenshot for React Calculator, 🔥✨ please checkout the live version 🔥✨
+![Screenshot 2022-01-10 at 01-26-19 React Calculator](https://user-images.githubusercontent.com/94052679/148725677-81e5b788-6e27-4878-8391-6473e09b184c.png)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
